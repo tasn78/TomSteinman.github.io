@@ -29,13 +29,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-.header-image {
-	width: 100%;
-	height: auto;
-	max-height: 400px; /* Adjust based on your preference */
-	object-fit: cover; /* Ensures the image covers the area */
-}
-
 body {
 	line-height: 1;
 }
