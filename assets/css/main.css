@@ -55,6 +55,33 @@ footer, header, hgroup, menu, nav, section {
     flex: 1; /* Allow to grow and fill the space */
 }
 
+/* Style for the courses table */
+.courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.courses-table th,
+.courses-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.courses-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: left;
+}
+
+.courses-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.courses-table tr:hover {
+    background-color: #ddd;
+}
+
 body {
 	line-height: 1;
 }
