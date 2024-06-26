@@ -37,6 +37,23 @@ footer, header, hgroup, menu, nav, section {
 	margin-top: 10px; /* Adjust based on your preference */
 }
 
+/* Style for the profile container */
+.profile-container {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+}
+
+/* Style for the profile image container */
+.profile-image-container {
+    flex: 0 0 auto; /* Do not allow to grow or shrink */
+    margin-right: 20px; /* Space between image and text */
+}
+
+/* Style for the profile text container */
+.profile-text-container {
+    flex: 1; /* Allow to grow and fill the space */
+}
+
 body {
 	line-height: 1;
 }
