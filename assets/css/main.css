@@ -69,18 +69,31 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .courses-table th {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #2e3d49; /* Darker background for header */
+    color: #fff; /* White text for header */
     text-align: left;
 }
 
 .courses-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+.courses-table tr:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd rows */
 }
 
 .courses-table tr:hover {
-    background-color: #ddd;
+    background-color: #ddd; /* Highlight on hover */
 }
+
+.courses-table td {
+    color: #333; /* Darker text color */
+}
+
+.courses-table tr:nth-child(even) td {
+    color: #000; /* Ensure text is visible on light gray background */
+}
+
 
 body {
 	line-height: 1;
