@@ -305,108 +305,122 @@
 									</div>
 
 									<!-- Projects Section -->
-									<h3 id="projects" class="major">Projects</h3>
-									<p>Selected projects highlighting AI/ML, cloud deployment, security hardening, and quantum computing work.</p>
+									<div class="content-panel">
+										<h3 id="projects" class="major">Featured Projects</h3>
+										<p>
+											Selected projects highlighting software engineering, artificial intelligence, data science,
+											cloud deployment, cybersecurity, big data processing, and quantum computing.
+										</p>
 									
-									<h4>Quantum-Enabled Network Intrusion Detection Research (NSF REU — Publishing Pending)</h4>
-									<p>
-									  Research project integrating AI + cybersecurity with quantum optimization concepts to improve minority-class intrusion detection.
-									</p>
-									<ul>
-									  <li>Implemented deep learning models (Graph Attention Network + multi-task Feedforward Neural Network) and evaluated with per-class metrics (confusion matrix, ROC-AUC, F1).</li>
-									  <li>Explored quantum-inspired feature selection workflows (QUBO/Ising, QAOA-style approaches) alongside classical baselines.</li>
-									</ul>
-									<p><strong>Tech:</strong> Python, PyTorch, scikit-learn, Qiskit, pandas/NumPy</p>
+										<div class="project-grid">
 									
-									<hr />
+											<article class="project-card">
+												<h4>Improving Minority-Class Classification in Large, Imbalanced Datasets</h4>
+												<p>
+													Research project using network intrusion detection as a case study for improving
+													rare-class prediction in large, imbalanced datasets.
+												</p>
+												<ul>
+													<li>Built classical machine learning and deep learning workflows with per-class evaluation metrics.</li>
+													<li>Explored quantum-inspired feature selection using QUBO, Ising formulations, and QAOA-style optimization.</li>
+												</ul>
+												<p class="meta"><strong>Tech:</strong> Python, PyTorch, scikit-learn, Qiskit, pandas, NumPy</p>
+												<a href="research.html" class="special">View Research</a>
+											</article>
 									
-									<h4>LLM Assistant Microservice (Email/Calendar Workflows)</h4>
-									<p>
-									  A Flask-based API service designed for automation-style workflows and deployment in the cloud.
-									</p>
-									<ul>
-									  <li>Designed REST endpoints and structured JSON responses for integration into other tools/services.</li>
-									  <li>Containerized and deployed using modern cloud patterns.</li>
-									</ul>
-									<p><strong>Tech:</strong> Python, Flask, Docker, Terraform, GCP (Cloud Run / Storage)</p>
+											<article class="project-card">
+												<h4>OpenGenome2 Gene Sequence Vectorization and Analysis</h4>
+												<p>
+													Big-data genomics project focused on scalable processing of FASTA sequence data,
+													k-mer frequency analysis, codon usage, and vectorized genomic representations.
+												</p>
+												<ul>
+													<li>Converted large sequence files into Parquet for distributed-friendly analysis.</li>
+													<li>Used Spark-style transformations and aggregation patterns for reproducible large-scale processing.</li>
+												</ul>
+												<p class="meta"><strong>Tech:</strong> Python, Apache Spark, PyArrow, Parquet, Biopython, Hadoop/HDFS concepts</p>
+											</article>
 									
-									<hr />
+											<article class="project-card">
+												<h4>Deep Learning Object Tracking with YOLOv8 and BoT-SORT</h4>
+												<p>
+													Computer vision project for pedestrian detection and tracking in MOT16 video sequences,
+													with emphasis on identity persistence during occlusion.
+												</p>
+												<ul>
+													<li>Used YOLOv8-based detection and BoT-SORT tracking workflows.</li>
+													<li>Tuned tracker behavior to improve object tracking stability through occlusion events.</li>
+												</ul>
+												<p class="meta"><strong>Tech:</strong> Python, YOLOv8, BoT-SORT, object detection, object tracking</p>
+											</article>
 									
-									<h4>Secure NAS Web Server (Flask + Nginx Hardening)</h4>
-									<p>
-									  A personal NAS-style web server focused on secure remote access and operational protections.
-									</p>
-									<ul>
-									  <li>Reverse proxy configuration with authentication patterns and HTTPS/TLS setup.</li>
-									  <li>Added protective controls such as request limiting and access monitoring/logging concepts.</li>
-									</ul>
-									<p><strong>Tech:</strong> Flask, Nginx, OpenSSL/TLS, Linux</p>
+											<article class="project-card">
+												<h4>LLM Assistant Microservice</h4>
+												<p>
+													Flask-based API service designed for automation-style workflows involving email,
+													calendar, summarization, and cloud deployment patterns.
+												</p>
+												<ul>
+													<li>Designed REST endpoints and structured JSON responses for integration into other tools and services.</li>
+													<li>Containerized and deployed using modern cloud patterns.</li>
+												</ul>
+												<p class="meta"><strong>Tech:</strong> Python, Flask, Docker, Terraform, Google Cloud Run, Cloud Storage</p>
+											</article>
 									
-									<hr />
+											<article class="project-card">
+												<h4>Secure NAS Web Server</h4>
+												<p>
+													Personal NAS-style web server project focused on secure remote access, authentication,
+													traffic control, and operational hardening.
+												</p>
+												<ul>
+													<li>Configured Flask with Nginx reverse proxy support and HTTPS/TLS concepts.</li>
+													<li>Implemented security controls such as authentication, request limiting, and access monitoring.</li>
+												</ul>
+												<p class="meta"><strong>Tech:</strong> Flask, Nginx, OpenSSL/TLS, Linux, .htpasswd</p>
+											</article>
 									
-									<h4>Embedding-Based eCommerce Recommendation System</h4>
-									<p>
-									  Amazon-style recommendation modeling using neural collaborative filtering and embedding retrieval.
-									</p>
-									<ul>
-									  <li>Implemented NCF and two-tower style approaches and compared variants via structured testing.</li>
-									  <li>Used vector similarity search for fast retrieval and scalable recommendation lookups.</li>
-									</ul>
-									<p><strong>Tech:</strong> TensorFlow, FAISS, Python</p>
+											<article class="project-card">
+												<h4>Embedding-Based eCommerce Recommendation System</h4>
+												<p>
+													Amazon-style recommendation system using neural collaborative filtering,
+													embedding-based retrieval, and vector similarity search.
+												</p>
+												<ul>
+													<li>Implemented NCF and two-tower-style approaches for recommendation modeling.</li>
+													<li>Used FAISS for efficient similarity search and scalable recommendation lookups.</li>
+												</ul>
+												<p class="meta"><strong>Tech:</strong> Python, TensorFlow, FAISS, embeddings, recommendation systems</p>
+											</article>
 									
-									<hr />
+										</div>
 									
-									<h4>Multi-Object Tracking (MOT16)</h4>
-									<p>
-									  Deep learning tracking pipeline combining detection, tracking, and re-identification concepts.
-									</p>
-									<ul>
-									  <li>Experimented with modern tracker configurations tuned for occlusion robustness.</li>
-									  <li>Documented results for a full course project report/presentation.</li>
-									</ul>
-									<p><strong>Tech:</strong> Python, PyTorch, YOLO workflows, BoT-SORT / ByteTrack concepts</p>
+										<hr />
 									
-									<hr />
+										<h4>Additional Projects</h4>
+										<ul>
+											<li>Real-Time Network Intrusion Detection System using Python</li>
+											<li>GCP Deployments Portfolio using GKE, Cloud Functions, API Gateway, and Artifact Registry</li>
+											<li>CPU Scheduling Simulator using FCFS, Round Robin, SJF, Priority, SRTF, LRTF, and HRRN</li>
+											<li>Route-Finding Algorithms using BFS, DFS, ID-DFS, Best-First Search, and A*</li>
+											<li>SOS Game using Qt and C++</li>
+											<li>Phonebook Application using Java and MySQL</li>
+											<li>Diabetes Utility App using Python and customTkinter</li>
+										</ul>
 									
-									<h4>Distributed Genomic Search &amp; Sequence Analysis (OpenGenome2)</h4>
-									<p>
-									  Big-data pipeline for distributed sequence processing (k-mers/codons) and scalable aggregation.
-									</p>
-									<ul>
-									  <li>Converted FASTA-style inputs into distributed-friendly formats and performed large-scale analysis.</li>
-									  <li>Implemented Spark-style transformations/aggregations for reproducible results.</li>
-									</ul>
-									<p><strong>Tech:</strong> Apache Spark, Hadoop/HDFS, Parquet, Python</p>
-									
-									<hr />
-									
-									<h4>Additional Projects</h4>
-									<ul>
-									  <li>Real-Time Network Intrusion Detection System (Python)</li>
-									  <li>Improving Minority Class Classification in Large Imbalanced Datasets (IEEE-style paper + metrics pipeline)</li>
-									  <li>GCP Deployments Portfolio (GKE, Cloud Functions, API Gateway, Artifact Registry)</li>
-									  <li>CPU Scheduling Simulator (FCFS, RR, SJF, Priority, SRTF, LRTF, HRRN)</li>
-									  <li>Route-Finding Algorithms (BFS, DFS, ID-DFS, Best-First, A*)</li>
-									  <li>SOS Game (Qt / C++)</li>
-									  <li>Phonebook Application (Java / MySQL)</li>
-									  <li>Diabetes Utility App (Python / customTkinter)</li>
-									</ul>
-									
-									<p>
-									  Full project list (excluding publishing-pending research):
-									  <a href="https://github.com/tasn78?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub repositories</a>
-									</p>
-									
-									<section class="features">
-									  <article>
-									    <a href="https://github.com/tasn78?tab=repositories" target="_blank" class="image"><img src="images/GitHub-logo.jpg" alt="" /></a>
-									    <a href="https://github.com/tasn78?tab=repositories" target="_blank" class="special">My GitHub Repository</a>
-									  </article>
-									  <article>
-									    <a href="research.html" class="image"><img src="images/research-image.jpg" alt="" /></a>
-									    <a href="research.html" class="special">Learn more about my research</a>
-									  </article>
-									</section>
+										<ul class="actions action-row">
+											<li>
+												<a href="https://github.com/tasn78?tab=repositories" class="button primary" target="_blank" rel="noopener noreferrer">
+													View GitHub Repositories
+												</a>
+											</li>
+											<li>
+												<a href="research.html" class="button">
+													View Research
+												</a>
+											</li>
+										</ul>
+									</div>
 
 
 				<!-- Footer -->
