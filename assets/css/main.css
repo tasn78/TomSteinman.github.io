@@ -4466,3 +4466,66 @@ ul {
 	margin-bottom: 0.75rem;
 	color: #ffffff;
 }
+
+/* =========================================================
+   Mobile profile/hero cleanup
+   ========================================================= */
+
+@media screen and (max-width: 736px) {
+	#profile header .inner {
+		padding: 3rem 1.5rem 2.5rem 1.5rem;
+	}
+
+	.profile-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 1.5rem;
+	}
+
+	.profile-image-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.profile-image {
+		width: 220px;
+		max-width: 70vw;
+		height: auto;
+		border-radius: 50%;
+	}
+
+	.profile-text-container {
+		width: 100%;
+		max-width: 520px;
+	}
+
+	.profile-text-container h2 {
+		font-size: 1.9rem;
+		line-height: 1.2;
+		letter-spacing: 0.12em;
+		margin-bottom: 1rem;
+	}
+
+	.profile-text-container p {
+		font-size: 0.95rem;
+		line-height: 1.55;
+		margin-bottom: 0.75rem;
+	}
+
+	.profile-text-container .hero-actions {
+		justify-content: center;
+		margin-top: 1.25rem;
+	}
+
+	.profile-text-container .hero-actions li {
+		width: 100%;
+		max-width: 260px;
+	}
+
+	.profile-text-container .hero-actions .button {
+		width: 100%;
+	}
+}
