@@ -4576,3 +4576,32 @@ ul {
 	font-size: 0.92rem;
 	margin-bottom: 1rem;
 }
+
+.project-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+.project-card {
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 10px;
+	padding: 1.5rem;
+	margin-bottom: 0;
+}
+
+.project-card h4 {
+	margin-bottom: 0.75rem;
+}
+
+.project-card p {
+	margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 980px) {
+	.project-grid {
+		grid-template-columns: 1fr;
+	}
+}
