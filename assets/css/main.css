@@ -4453,3 +4453,16 @@ ul {
 		row-gap: 0.35rem;
 	}
 }
+
+.skill-category {
+	margin-bottom: 1.5rem;
+}
+
+.skill-category:last-child {
+	margin-bottom: 0;
+}
+
+.skill-category h4 {
+	margin-bottom: 0.75rem;
+	color: #ffffff;
+}
