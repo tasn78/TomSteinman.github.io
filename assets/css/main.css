@@ -4434,3 +4434,22 @@ ul {
 		padding: 0.35rem 0.65rem;
 	}
 }
+
+.education-inline {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	column-gap: 0.4rem;
+	align-items: start;
+	margin-top: 1.5rem;
+}
+
+.education-inline p {
+	margin: 0 0 0.35rem 0;
+}
+
+@media screen and (max-width: 736px) {
+	.education-inline {
+		grid-template-columns: 1fr;
+		row-gap: 0.35rem;
+	}
+}
