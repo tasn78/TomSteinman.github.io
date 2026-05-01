@@ -4220,3 +4220,216 @@ input, select, textarea {
 		}
 
 	}
+
+
+/* =========================================================
+   Custom Portfolio Refinements - Tom Steinman
+   Added to modernize spacing, typography, cards, and mobile layout
+   ========================================================= */
+
+/* General typography cleanup */
+body, input, select, textarea {
+	font-size: 16px;
+	line-height: 1.65;
+}
+
+p, li {
+	font-size: 0.98rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3.major {
+	font-size: 1.05rem;
+	letter-spacing: 0.08em;
+	margin-bottom: 1.35rem;
+}
+
+h4 {
+	font-size: 0.95rem;
+	letter-spacing: 0.06em;
+	margin-bottom: 0.6rem;
+}
+
+/* Reduce oversized vertical spacing */
+.wrapper {
+	padding: 3.5rem 0 2.5rem 0;
+}
+
+.wrapper .inner {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+/* Remove excessive section spacing from inline styles */
+section.skills,
+section.work-experience {
+	margin-bottom: 3rem !important;
+}
+
+article {
+	margin-bottom: 2rem;
+}
+
+ul {
+	margin-bottom: 1.5rem;
+}
+
+/* Reusable content panels */
+.content-panel {
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 10px;
+	padding: 2rem;
+	margin-bottom: 2.5rem;
+}
+
+/* Compact metadata text for job dates, roles, and project tech lines */
+.meta {
+	color: rgba(255, 255, 255, 0.72);
+	font-size: 0.92rem;
+	margin-bottom: 1rem;
+}
+
+/* Work experience card styling */
+.resume-card {
+	padding: 1.5rem 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.resume-card:first-of-type {
+	border-top: none;
+	padding-top: 0;
+}
+
+/* Project grid and project cards */
+.project-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+.project-card {
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 10px;
+	padding: 1.5rem;
+	margin-bottom: 0;
+}
+
+.project-card h4 {
+	margin-bottom: 0.75rem;
+}
+
+.project-card p {
+	margin-bottom: 1rem;
+}
+
+/* Skill chips */
+.skill-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.65rem;
+	margin-top: 1rem;
+}
+
+.skill-tags span {
+	display: inline-block;
+	padding: 0.4rem 0.75rem;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.06);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	font-size: 0.88rem;
+}
+
+/* Hero/profile action buttons */
+.hero-actions,
+.action-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin-top: 1.25rem;
+}
+
+/* Improve profile section spacing if your custom profile CSS allows it */
+.profile-text-container p {
+	margin-bottom: 0.5rem;
+}
+
+/* Cleaner footer contact text */
+#footer .contact li {
+	font-size: 0.95rem;
+}
+
+/* Tablet and small desktop adjustments */
+@media screen and (max-width: 980px) {
+	.project-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.wrapper .inner {
+		width: 90%;
+	}
+}
+
+/* Mobile refinements */
+@media screen and (max-width: 736px) {
+	body, input, select, textarea {
+		font-size: 15px;
+	}
+
+	h2 {
+		font-size: 1.6rem;
+	}
+
+	h3.major {
+		font-size: 0.95rem;
+		margin-bottom: 1.2rem;
+	}
+
+	h4 {
+		font-size: 0.9rem;
+	}
+
+	.wrapper {
+		padding: 2.5rem 0 1.5rem 0;
+	}
+
+	.content-panel {
+		padding: 1.25rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.project-grid {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+
+	.project-card {
+		padding: 1.25rem;
+	}
+
+	.hero-actions,
+	.action-row {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.hero-actions .button,
+	.action-row .button {
+		width: 100%;
+		text-align: center;
+	}
+
+	.skill-tags {
+		gap: 0.5rem;
+	}
+
+	.skill-tags span {
+		font-size: 0.82rem;
+		padding: 0.35rem 0.65rem;
+	}
+}
